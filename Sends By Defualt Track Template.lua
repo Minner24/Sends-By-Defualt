@@ -39,7 +39,7 @@ reaper.Main_OnCommand(command_id, 0)
 
 -- Set the selected track to record
 local track = reaper.GetSelectedTrack(0, 0)
-reaper.SetMediaTrackInfo_Value(track, "I_RECARM", 1)
+reaper.SetMediaTrackInfo_Value(track, "I_RECARM", 0)
 
 -- Find the tracks with the specified names
 
