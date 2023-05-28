@@ -41,7 +41,7 @@ for i = 0, num_tracks - 1 do
       -- Add a send to the selected track, pointing to the receive track
       local send = reaper.CreateTrackSend(selected_track, receive_track)
       -- Set the send properties as desired
-      reaper.SetTrackSendInfo_Value(selected_track, 0, send, "I_DSTCHAN", 2)
+      reaper.SetTrackSendInfo_Value(selected_track, 0, send, "I_DSTCHAN", 0)
       reaper.SetTrackSendInfo_Value(selected_track, 0, send, "D_VOL", 0)
     end
   end
